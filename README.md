@@ -1,6 +1,6 @@
 # LaravelRESTAPI
 
-Adinda Hashina - 18104026
+Adinda Hashina (18104026)
 
 ## Instalasi
 
@@ -25,9 +25,21 @@ Adinda Hashina - 18104026
 
 - Daftar endpoint api
 
-| Method | Endpoint     | Parameter                    |
-| ------ | ------------ | ---------------------------- |
-| get    | /person      | none                         |
-| post   | /person      | body(nik, nama, alamt, umur) |
-| put    | /person/{id} | body(nik, nama, alamt, umur) |
-| delete | /person      | none                         |
+| Method | Endpoint     | Parameter                     |
+| ------ | ------------ | ----------------------------- |
+| get    | /person      | none                          |
+| post   | /person      | body(nik, nama, alamat, umur) |
+| put    | /person/{id} | body(nik, nama, alamat, umur) |
+| delete | /person      | none                          |
+
+**_Get Person_**
+Buka postman, lalu masukkan url untuk get person yaitu `http://127.0.0.1:8000/api/person` ubah method menjadi get lalu klik **Send**.
+
+**_Insert Person_**
+Buka postman, lalu masukkan url untuk insert person yaitu `http://127.0.0.1:8000/api/person` ubah method menjadi post lalu untuk body pilih `x-www-form-urlencode`. Untuk body value sendiri diisi dengan nik, nama, alamat, dan umur. Setelah itu klik **Send**.
+
+**_Update Person_**
+Buka postman, lalu masukkan url untuk update person yaitu `http://127.0.0.1:8000/api/person/{id}` ubah method menjadi put lalu untuk body pilih `x-www-form-urlencode`. Untuk body value sendiri diisi dengan nik, nama, alamat, dan umur. Isikan parameter id pada url dengan id person yang akan diubah. Setelah itu klik **Send**.
+
+**_Delete Person_**
+Buka postman, lalu masukkan url untuk update person yaitu `http://127.0.0.1:8000/api/person/{id}` ubah method menjadi delete . Isikan parameter id pada url dengan id person yang akan dihapus. Setelah itu klik **Send**.
